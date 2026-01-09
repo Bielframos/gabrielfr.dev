@@ -17,11 +17,19 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = (await params).slug
   const post = await feed.getPost(slug)
+  const postImageUrl = post.mainImage ? urlFor(post.mainImage)?.quality(100).url() : null
 
   if (post) {
     return {
       title: `Gabrielfr.dev | ${post.title}`,
       description: post.subtitle,
+      openGraph: {
+        title: post.title,
+        description: post.subtitle,
+        images: [postImageUrl || ""],
+        type: "article",
+        url: new URL(`/feed/${post.slug}`, "https://www.gabrielfr.dev").toString(),
+      },
     }
   }
 
