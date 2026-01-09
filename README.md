@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 gabrielfr.dev - Blog de Desenvolvimento
 
-## Getting Started
+Bem-vindo ao meu blog pessoal! Um espaço onde compartilho conhecimento, experiências e insights sobre tudo aquilo que me interessa.
 
-First, run the development server:
+## 🛠️ Tech Stack
+
+Este blog foi construído com as melhores tecnologias modernas:
+
+- **[Next.js](https://nextjs.org/)** - Framework React para produção com SSR e Static Generation
+- **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática para código mais seguro e previsível
+- **[Sanity CMS](https://www.sanity.io/)** - Headless CMS flexível para gerenciar conteúdo
+- **[React](https://react.dev/)** - Biblioteca UI moderna e declarativa
+- **[TailwindCSS](https://tailwindcss.com/)** - Utility-first CSS para estilização rápida
+- **[pnpm](https://pnpm.io/)** - Gerenciador de pacotes rápido e eficiente
+
+## 🚀 Como começar
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Instalar dependências
+pnpm install
+
+# Executar em desenvolvimento
 pnpm dev
-# or
-bun dev
+
+# Buildar para produção
+pnpm build
+
+# Iniciar servidor de produção
+pnpm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para explorar!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/              # Rotas e páginas do Next.js
+├── lib/              # Componentes, hooks e utilitários compartilhados
+├── public/           # Arquivos estáticos
+├── sanity/           # Configuração do Sanity CMS
+└── README.md         # Você está aqui!
+```
 
-## Learn More
+## 🎯 Explore o Blog
 
-To learn more about Next.js, take a look at the following resources:
+- **[Feed](http://localhost:3000/feed)** - Todos os artigos publicados
+- **[Setup](http://localhost:3000/setup)** - Meu ambiente de desenvolvimento
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contribuições
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Achou um erro? Tem sugestões? Fique à vontade para abrir uma issue ou PR!
 
-## Deploy on Vercel
+## 💬 Vamos nos conectar?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🐦 [X/Twitter](https://twitter.com/GabrielFramos99)
+- 📷 [Instagram](https://www.instagram.com/framosgabriel/)
+- 🐙 [GitHub](https://github.com/Bielframos)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Feito com ❤️ por Gabriel Framos | © 2026
+
