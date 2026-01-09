@@ -1,65 +1,89 @@
-import Image from "next/image";
+import { AnimatedPic, Layout } from "@/lib/components/modules"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <Layout>
+      <div className="w-full max-w-2xl mx-auto [&_p]:text-black-10 dark:[&_p]:text-white-9 max-md:pl-8 max-md:pt-10">
+        <article>
+          <h2 className="mb-4">Hey there! 👋</h2>
+
+          <p>
+            Esse é o meu espaço reservado na internet onde compartilho um pouco sobre mim, meus
+            projetos e também escrevo alguns artigos sobre desenvolvimento web, design e outros
+            assuntos que me interessam.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+        </article>
+
+        <hr className="my-10" />
+
+        <article className="space-y-4">
+          <h2 className="mb-4">Quem sou eu?</h2>
+          <p>
+            Eu sou Gabriel França, tenho 26 anos e atualmente moro em Olinda - PE. Sou Design
+            Gráfico por formação e ao longo dos últimos 5 anos venho atuando como Desenvolvedor
+            Web Front-end.
+          </p>
+
+          <p>
+            Sou uma pessoa criativa e curiosa então adoro aprender coisas novas e explorar novas
+            tecnologias. Gosto muito de desafios e acredito que sempre há algo novo para
+            aprender.
+          </p>
+
+          <p>
+            Como hobby eu amo programar (Embora também seja minha profissão), também sou
+            apaixonado por jogar Video Games, acompanhar esportes como MMA, Futebol ou qualquer
+            outro esporte que tenha um Brasileiro competindo, entre outras coisas.
+          </p>
+
+          <div className="grid auto-rows-min md:grid-cols-2 gap-2 mt-6">
+            <AnimatedPic
+              src="/kamala.webp"
+              alt="Foto da minha filha (Kamala, uma cadela da raça dachshund)"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+
+            <AnimatedPic src="/my-marriage.webp" alt="Eu e minha esposa no nosso casamento" />
+
+            <AnimatedPic src="/me-and-my-wife.webp" alt="Eu e minha esposa" />
+
+            <AnimatedPic
+              src="/me-with-a-snake.webp"
+              alt="Eu e minha esposa no nosso casamento"
+            />
+          </div>
+        </article>
+
+        {/* <hr className="my-10" />
+
+      <article className="space-y-4">
+        <h2 className="mb-4">
+          Juntos, podemos transformar problemas reais em soluções estratégicas.
+        </h2>
+        <p>
+          Se você busca unir estratégia, criatividade e tecnologia para gerar resultados
+          concretos no seu negócio, entre em contato comigo através da minha agência criativa, a
+          Adstrito.
+        </p>
+
+        <div className="flex flex-wrap gap-4 mt-6">
+          <Link
+            href="https://wa.me/+5581993621938"
             target="_blank"
-            rel="noopener noreferrer"
+            className={cn(buttonStyle({ variant: "default", iconPos: "before" }))}
           >
-            Documentation
-          </a>
+            <MessagesSquare /> Envie uma mensagem
+          </Link>
+          <Link
+            href="https://www.instagram.com/adstrito.ag/"
+            target="_blank"
+            className={cn(buttonStyle({ variant: "default", iconPos: "before" }))}
+          >
+            <Instagram /> Adstrito.ag
+          </Link>
         </div>
-      </main>
-    </div>
-  );
+      </article> */}
+      </div>
+    </Layout>
+  )
 }
+
